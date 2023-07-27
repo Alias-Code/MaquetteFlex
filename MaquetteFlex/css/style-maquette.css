@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #000000, #434343);
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+ul, li, a {
+    display: inline;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    height: 90vh;
+    font-family: monospace;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade 3s ease-in forwards;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
